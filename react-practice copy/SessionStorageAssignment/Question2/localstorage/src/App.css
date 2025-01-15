@@ -1,0 +1,32 @@
+form {
+  width: 80vw;
+  margin:5rem;
+  background-color: beige;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitbtn {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:100%
+ 
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}

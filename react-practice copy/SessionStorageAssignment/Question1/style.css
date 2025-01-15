@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.mainbody{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    background-color: beige;
+
+}
+
+.centerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:80%;
+    height:80%;
+    background-color: black;
+    border:2rem solid black;
+}
+
+#inputfield{
+    color:black;
+    width:100%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.displaying{
+    background-color: white;
+    color:black;
+  
+    font-size: 25px;
+    padding:0.5rem;
+    margin:1rem;
+}
+
+
+
+
