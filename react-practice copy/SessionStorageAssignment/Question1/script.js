@@ -8,6 +8,7 @@ const handlesubmit=()=>{
     const value=input.value.trim();
 
     displaydiv.innerText=value;
+    console.log('--------learning git---------')
 }
 
 submit.addEventListener("click",handlesubmit);
