@@ -15,8 +15,8 @@ function App() {
       {/* <Buttons4/> */}
       {/* <CustomHookUseIsMounted/> */}
       {/* <CustomHookUseWindowSize/> */}
-      {/* <CustomHookUseCompSize/> */}
-      <FormValidation/>
+      <CustomHookUseCompSize/>
+      {/* <FormValidation/> */}
     </div>
   );
 }

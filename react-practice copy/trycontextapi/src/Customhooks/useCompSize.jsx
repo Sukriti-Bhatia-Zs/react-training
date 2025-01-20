@@ -11,17 +11,17 @@ const useCompSize=(ref)=>{
 
         const changesize=()=>{
             if(ref.current){
-                setCompSize(prev=>({...prev,width:ref.current.offsetwidth,height:ref.current.offsetheight}))
+                setCompSize(prev=>({...prev,width:ref.current.offsetWidth,height:ref.current.offsetHeight}))
             }
         }
 
         const resizeObserver = new ResizeObserver(changesize);
 
         if(ref.current){
-            resizeObserver.observer(ref.current)
+            resizeObserver.observe(ref.current)
         }
 
-    },[ref.current])
+    },[ref])
 
     return {compsize}
     
