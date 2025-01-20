@@ -6,6 +6,8 @@ import CustomHookUseIsMounted from './Customhooks/CustomHookUseIsMounted';
 import CustomHookUseWindowSize from './Customhooks/CustomHookUseWindowSize';
 import CustomHookUseCompSize from './Customhooks/CustomHookUseCompSize'
 import FormValidation from './Form/FormValidation';
+import Childprops from './reacttest/Childprops';
+import Parentprops from './reacttest/Parentprops';
 
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
       {/* <CustomHookUseIsMounted/> */}
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
-      <FormValidation/>
+      {/* <FormValidation/> */}
+      {/* <Childprops/> */}
+      <Parentprops/>
     </div>
   );
 }

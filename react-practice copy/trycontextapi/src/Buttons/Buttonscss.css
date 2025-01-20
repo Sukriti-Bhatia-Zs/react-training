@@ -2,7 +2,7 @@
     display: flex;  
     justify-content: center; 
     align-items: center;  
-    background-color: green;  
+    background-color: beige;  
     border: 1px solid #ccc;  
     border-radius: 10px;  
     padding: 10px;
@@ -59,4 +59,57 @@
   width: 100vw;
   height: 100vh;
 }
+
+.Childmain {
+  display: flex; 
+  flex-direction: row;
+  height:30rem;
+  width:80%;
+  background-color: lightblue;
+  border:2px solid black;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+  padding:1rem;
+  
+}
+
+.childdetails{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:2px solid black;
+  padding:2rem;
+}
+
+.desc{
+  border:2px solid black;
+  padding:1rem;
+  min-height: 7rem;
+}
+
+@media (max-width: 750px) {
+  .Childmain {
+    flex-direction: column;
+    align-items: center;
+    height:max-content
+  }
+
+  .childimg img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .childdetails {
+    text-align: center; 
+  }
+}
+
+
+
+
+
+
+
 
