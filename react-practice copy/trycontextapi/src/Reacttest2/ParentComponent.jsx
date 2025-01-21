@@ -35,21 +35,22 @@ const ParentComponent = () => {
 
   return (
     <div className="Main">
-      <div className="content">
+      <div className="ParentContent">
         <div>
-          <label htmlFor="Buttons">Buttons: </label>
+          {/* <label htmlFor="Buttons">Buttons: </label> */}
           <input
             type="text"
             name="Buttons"
-            placeholder="Enter No of Buttons Required"
+            placeholder="Enter No of Buttons "
             onChange={handleInputChange}
-            
+            width={"100%"}
+            className="input-field"
             
           />
         </div>
         {error && <div className="error" style={{color:"red"}}>{error}</div>}
         <div>
-          <button onClick={handleClick}>Roll</button>
+          <button onClick={handleClick} className="roll-btn">Roll</button>
         </div>
       </div>
 

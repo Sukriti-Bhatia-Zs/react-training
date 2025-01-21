@@ -18,7 +18,7 @@ const ChildComponent = ({ inputValue ,error}) => {
       {(
         <div className="diving">
           {inputValue>0 && !error &&[...Array(Number(inputValue))].map((element, index) => (
-            <button key={index} style={{backgroundColor:"white",border:"1px solid white"}}>
+            <button key={index} style={{backgroundColor:"lightgrey",border:"1px solid lightgrey"}}>
               <img
                 src={images[index % images.length]} 
                 alt={`dice ${index + 1}`}
