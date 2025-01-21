@@ -7,17 +7,30 @@ const useWindowSize=()=>{
         height:window.innerHeight
     })
 
-    const onrezise=()=>{
-        window.addEventListener("resize",()=>{
-            setWindowSize(prev=>({...prev,width:window.innerWidth,height:window.innerHeight}))
-        })
-    }
+    
 
     useEffect(()=>{
-        onrezise();
-    })
 
-    return {windowsize}
+        const onResize = () => {
+            setWindowSize({
+              width: window.innerWidth,
+              height: window.innerHeight,
+            });
+        };
+      
+          window.addEventListener("resize", onResize);
+      
+       
+          return () => {
+            window.removeEventListener("resize", onResize);
+          };
+
+       
+    },[])
+
+    
+
+    return windowsize
 
 
 

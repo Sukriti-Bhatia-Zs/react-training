@@ -4,14 +4,14 @@ const useCompSize=(ref)=>{
 
     const [compsize,setCompSize]=useState({
         width:0,
-        height:0
+        height:0,
     })
 
     useEffect(()=>{
 
         const changesize=()=>{
             if(ref.current){
-                setCompSize(prev=>({...prev,width:ref.current.offsetWidth,height:ref.current.offsetHeight}))
+                setCompSize({width:ref.current.offsetWidth,height:ref.current.offsetHeight})
             }
         }
 
@@ -21,9 +21,15 @@ const useCompSize=(ref)=>{
             resizeObserver.observe(ref.current)
         }
 
-    },[ref])
+        return () => {
+            if (ref.current) {
+              resizeObserver.unobserve(ref.current);
+            }
+          };
 
-    return {compsize}
+    })
+
+    return compsize
     
 }
 

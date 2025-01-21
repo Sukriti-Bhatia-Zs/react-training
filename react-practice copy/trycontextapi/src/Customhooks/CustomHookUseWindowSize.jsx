@@ -5,17 +5,17 @@ import useWindowSize from "./useWindowSize"
 
 const CustomHookUseWindowSize=()=>{
 
-    const {windowsize}=useWindowSize();
+    const {width, height}=useWindowSize();
 
     return (
         <div className="mainbody">
     
             <div className="content">
                 <div >
-                   Window width {windowsize.width} px
+                   Window width {width} px
                 </div>
                 <div>
-                    Window height {windowsize.height} px
+                    Window height {height} px
                 </div>
             </div>
     

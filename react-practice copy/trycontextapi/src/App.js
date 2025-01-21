@@ -14,8 +14,8 @@ function App() {
       {/* <Themecontextprovider/> */}
       {/* <Buttons4/> */}
       {/* <CustomHookUseIsMounted/> */}
-      {/* <CustomHookUseWindowSize/> */}
-      <CustomHookUseCompSize/>
+      <CustomHookUseWindowSize/>
+      {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
     </div>
   );

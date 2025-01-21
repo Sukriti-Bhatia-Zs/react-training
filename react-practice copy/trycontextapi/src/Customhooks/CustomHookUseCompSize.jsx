@@ -7,7 +7,7 @@ import { useState ,useRef} from "react";
 const CustomHookUseCompSize=()=>{
     const ref=useRef();
 
-    const {compsize}=useCompSize(ref);
+    const {height,width}=useCompSize(ref);
 
     
 
@@ -16,10 +16,10 @@ const CustomHookUseCompSize=()=>{
     
             <div className="content">
                 <div >
-                   Window width {compsize.width} px
+                   Component width {width} px
                 </div>
                 <div>
-                    Window height {compsize.height} px
+                    Component height {height} px
                 </div>
             </div>
     
