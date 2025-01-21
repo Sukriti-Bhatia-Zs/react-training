@@ -7,6 +7,7 @@ import CustomHookUseWindowSize from './Customhooks/CustomHookUseWindowSize';
 import CustomHookUseCompSize from './Customhooks/CustomHookUseCompSize'
 import FormValidation from './Form/FormValidation';
 import ParentComponent from './Reacttest2/ParentComponent';
+import Count from './UseffectQues/Count';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
       <ParentComponent/>
+      {/* <Count/> */}
     </div>
   );
 }
