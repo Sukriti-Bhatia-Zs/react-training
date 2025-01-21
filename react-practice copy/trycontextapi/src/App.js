@@ -14,11 +14,11 @@ function App() {
     <div>
       {/* <Themecontextprovider/> */}
       {/* <Buttons4/> */}
-      <CustomHookUseIsMounted/>
+      {/* <CustomHookUseIsMounted/> */}
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
-      {/* <ParentComponent/> */}
+      <ParentComponent/>
     </div>
   );
 }

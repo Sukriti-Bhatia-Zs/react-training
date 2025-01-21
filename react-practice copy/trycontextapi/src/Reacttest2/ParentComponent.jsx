@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import ChildComponent from "./ChildComponent";
+import '../Buttons/Buttonscss.css'
 
 const ParentComponent = () => {
   const [inputValue, setInputValue] = useState();
   const [error, setError] = useState("");
   const [showbtn,setShowBtn]=useState(false);
+  const [loading,setLoading]=useState(false)
 
 
   const [rechangebuttn,setRechangebtn]=useState();
@@ -26,9 +28,16 @@ const ParentComponent = () => {
     if (rechangebuttn<=0 || rechangebuttn > 6) {
       setError("Please enter a value between 1 and 6.");
     } else {
-        setInputValue(rechangebuttn)
-        setShowBtn(true)
-    
+      setError(""); 
+      setShowBtn(false); 
+      setLoading(true); 
+      
+     
+      setTimeout(() => {
+        setInputValue(rechangebuttn); 
+        setLoading(false); 
+        setShowBtn(true);
+      }, 2000); 
     }
 
    
@@ -45,7 +54,7 @@ const ParentComponent = () => {
             placeholder="Enter No of Buttons "
             onChange={handleInputChange}
             width={"100%"}
-            className="input-field"
+            className="inputfield"
             
           />
         </div>
@@ -56,7 +65,7 @@ const ParentComponent = () => {
       </div>
 
       
-        {<ChildComponent inputValue={inputValue} error={error} showbtn={showbtn}/>}
+        {<ChildComponent inputValue={inputValue} error={error} showbtn={showbtn} loading={loading}/>}
      
 
 
