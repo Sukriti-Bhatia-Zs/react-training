@@ -4,29 +4,30 @@ import ChildComponent from "./ChildComponent";
 const ParentComponent = () => {
   const [inputValue, setInputValue] = useState();
   const [error, setError] = useState("");
+  const [showbtn,setShowBtn]=useState(false);
 
 
   const [rechangebuttn,setRechangebtn]=useState();
 
   const handleInputChange = (e) => {
     const value = e.target.value;
-    setRechangebtn(false);
 
     if (value <= 6) {
         setRechangebtn(value);
         setError("");
       } 
-
-      setRechangebtn(value);
+    setShowBtn(false);
+    setRechangebtn(value);
 
 
   };
 
   const handleClick = () => {
-    if (rechangebuttn > 6) {
+    if (rechangebuttn<=0 || rechangebuttn > 6) {
       setError("Please enter a value between 1 and 6.");
     } else {
         setInputValue(rechangebuttn)
+        setShowBtn(true)
     
     }
 
@@ -55,7 +56,7 @@ const ParentComponent = () => {
       </div>
 
       
-        {<ChildComponent inputValue={inputValue} error={error} />}
+        {<ChildComponent inputValue={inputValue} error={error} showbtn={showbtn}/>}
      
 
 
