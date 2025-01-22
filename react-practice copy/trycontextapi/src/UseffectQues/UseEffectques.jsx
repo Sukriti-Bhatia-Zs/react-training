@@ -1,25 +1,25 @@
 import React from "react";
-import { useEffect,useState } from "react";
-const UseEffectques=()=>{
+import { useEffect, useState } from "react";
+const UseEffectques = () => {
 
-        const [count, setCount] = useState(1);
+    const [count, setCount] = useState(1);
 
-        console.log(5);
+    console.log(5);
 
-        useEffect(() => {
+    useEffect(() => {
 
         console.log(4);
 
         return () => {
             console.log(1);
         };
-        }, [count]);
+    }, [count]);
 
-        useEffect(() => {
-            console.log(6);
-            setCount((count) => count + 1);
-        }, []);
-        return <Child count={count} />;
+    useEffect(() => {
+        console.log(6);
+        setCount((count) => count + 1);
+    }, []);
+    return <Child count={count} />;
 };
 
 
@@ -32,7 +32,7 @@ function Child({ count }) {
         return () => {
             console.log(8);
         };
-        }, [count]);
+    }, [count]);
     return null;
 }
 

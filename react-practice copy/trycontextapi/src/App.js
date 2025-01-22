@@ -20,9 +20,9 @@ function App() {
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
       {/* <Count/> */}
-      {/* <UseEffectques/> */}
+      <UseEffectques/>
     </div>
   );
 }
