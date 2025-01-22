@@ -7,6 +7,10 @@ const Count=()=>{
 
     const [num,setNum]=useState(0);
 
+    const [name,setName]=useState("");
+
+    const props1={count,num,name};
+
     useEffect(()=>{
         console.log("component mounted")
     },[])
@@ -22,7 +26,7 @@ const Count=()=>{
         <div>
             <div>hi trial usEffect</div>
             <button onClick={()=>setCount(prev=>prev+1)}>Click me</button>
-            <Number num={num}/>
+            <Number props1={props1}/>
         </div>
 
     )

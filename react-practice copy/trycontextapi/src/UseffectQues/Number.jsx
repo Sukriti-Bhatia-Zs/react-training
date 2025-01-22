@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 
-const Number=({num})=>{
+const Number=({props1})=>{
+
+    const {num,name,count}=props1
 
 
     useEffect(()=>{
