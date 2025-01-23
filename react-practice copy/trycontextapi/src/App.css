@@ -36,3 +36,69 @@
     transform: rotate(360deg);
   }
 }
+
+.modalmain{
+  background-color: beige;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+  position: relative;
+}
+
+
+.cross{
+  position: absolute;
+  top:0;
+  right:1rem;
+
+}
+
+.btn{
+  position: relative;
+  z-index: 1;
+  background-color: lightblue;
+  padding:1rem;
+}
+
+.outdiv{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crossmodal {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border: 2px solid black;
+  width: 50vw;
+  height: 50vh;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.fade-in-image { animation: fadeIn 1s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% {opacity: 0.5;}
+  100% { opacity: 1; }
+}
+
+
+
+
+
