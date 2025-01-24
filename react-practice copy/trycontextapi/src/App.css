@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,125 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --color-blue: #4635b1;
+  --color-purple: #b771e5;
+  --color-green: #aeea94;
+  --color-yellow: #fffbca;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: var(--color-purple);
+  height: 100vh;
+  width: 100vw;
+  gap: 5px;
+}
+
+.card {
+  background-color: var(--color-yellow);
+  display: grid;
+  place-items: center;
+}
+
+button {
+  background-color: var(--color-green);
+  color: var(--color-blue);
+}
+
+span {
+  background-color: var(--color-purple);
+  color: var(--color-yellow);
+  padding: 4px 8px;
+  border-radius: 12px;
+  cursor: default;
+}
+
+.maindiv {
+  position: relative;
+  display: inline-block;
+}
+
+.showtool {
+  background-color: lightblue;
+  padding: 0.3rem;
+  position: absolute;
+  text-align: center;
+  border: 1px solid black;
+  color: black;
+  width: max-content;
+  min-width: 16px;
+  z-index: 1;
+}
+
+.top {
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom {
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left {
+  left: -60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right {
+  right: -60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  width: 300px;
+  height: 100%;
+  background-color: lightblue;
+  padding: 20px;
+  display: block;
+  z-index: 2;
+  color:black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.Sidebar{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+@keyframes slideIn {
+  0% {
+    right: -250px; 
+  }
+  100% {
+    right: 0; 
+  }
+}
+
+
+
