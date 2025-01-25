@@ -6,28 +6,28 @@ function App() {
   const [center, setCenter] = useState(false);
   const refa = useRef(null);
 
- 
+
   const handleclickbtn = (index) => {
     if (index === 4) {
       console.log("4th index clicked");
-      setCenter((prev) => !prev); 
+      setCenter((prev) => !prev);
     }
   };
 
- 
+
   useEffect(() => {
     console.log(center);
   }, [center]);
 
- 
+
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
         refa.current &&
         !refa.current.contains(event.target) &&
-        event.target.tagName !== 'BUTTON' 
+        event.target.tagName !== 'BUTTON'
       ) {
-        setCenter(false); 
+        setCenter(false);
       }
     };
 
@@ -148,7 +148,7 @@ const SideBar = () => {
     <div className="Sidebar">
       <div className='sidebar'>
         <div>Hi, this is the sidebar</div>
-      </div>   
+      </div>
     </div>
   );
 };
