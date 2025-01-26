@@ -2,26 +2,28 @@ import React, { useEffect, useState } from "react";
 
 const DebouncingInput = () => {
   
+  const handleinputchange=(event)=>{
+    console.log(event.target.value);
+  }
+
+  const debounce=(func,delay)=>{
+    // function timer
+    let timer;
+
+    return (...args)=>{
+      // clear timer functions when calling everytime
+      clearTimeout(timer);
+      timer=setTimeout(()=>{
+        // function get executed after delay
+        func(...args)
+      },delay)
+    }
+  }
+  // handle debouce input , preventing mutiple api calls as handleinputchange will only be executed after 3000 sec
+  const handledebounceInput=debounce(handleinputchange,3000);
 
 
 
- 
-  const debounce = (func, delaytobedone) => {
-    let timeout;
-
-    return (...inputs) => {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => {
-        func(...inputs)
-      }, delaytobedone);
-    };
-  };
-
- 
-  const debouncedHandleInputChange = debounce((event) => {
-    console.log(event.target.value)
-    
-  }, 500); 
 
 
 
@@ -33,8 +35,9 @@ const DebouncingInput = () => {
           type="text"
           name="search"
           style={{ width: "100%" }}
-          onChange={debouncedHandleInputChange}
+          onChange={handledebounceInput}
         />
+      
       </div>
     </div>
   );
