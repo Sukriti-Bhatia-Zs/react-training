@@ -93,8 +93,7 @@ const Tooltip = ({ alignment, text, children }) => {
     const handleoutsidebtn = (event) => {
       if (
         mainRef.current &&
-        !mainRef.current.contains(event.target) &&
-        event.target.tagName !== "BUTTON"
+        !mainRef.current.contains(event.target)
       ) {
         setShow(false);
       }
@@ -146,7 +145,7 @@ const Hover = ({ text, alignment }) => {
 const SideBar = () => {
   return (
     <div className="Sidebar">
-      <div className='sidebar'>
+      <div onClick={(e)=>e.stopPropagation()} className='sidebar'>
         <div>Hi, this is the sidebar</div>
       </div>
     </div>
