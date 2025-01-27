@@ -36,7 +36,7 @@ function App() {
     return () => {
       window.removeEventListener('click', handleOutsideClick);
     };
-  });
+  },[]);
 
   return (
     <main>
@@ -105,7 +105,7 @@ const Tooltip = ({ alignment, text, children }) => {
     return () => {
       window.removeEventListener("click", handleoutsidebtn);
     };
-  });
+  },[]);
 
   return (
     <div
