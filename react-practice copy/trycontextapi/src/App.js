@@ -6,6 +6,7 @@ import CustomHookUseIsMounted from './Customhooks/CustomHookUseIsMounted';
 import CustomHookUseWindowSize from './Customhooks/CustomHookUseWindowSize';
 import CustomHookUseCompSize from './Customhooks/CustomHookUseCompSize'
 import FormValidation from './Form/FormValidation';
+import ParentContext from './context/ParentContext';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       {/* <CustomHookUseIsMounted/> */}
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
-      <FormValidation/>
+      {/* <FormValidation/> */}
+      <ParentContext/>
     </div>
   );
 }
