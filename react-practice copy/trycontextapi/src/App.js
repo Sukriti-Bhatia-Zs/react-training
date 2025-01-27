@@ -7,6 +7,9 @@ import CustomHookUseWindowSize from './Customhooks/CustomHookUseWindowSize';
 import CustomHookUseCompSize from './Customhooks/CustomHookUseCompSize'
 import FormValidation from './Form/FormValidation';
 import Throttle from './Throttling/Throttle';
+import Carousel from './Carousel/Carousel';
+import Dnd from './DragNDropList/Dnd';
+import Dropdown from './Dropdowns/Dropdown';
 
 
 function App() {
@@ -18,9 +21,13 @@ function App() {
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
-      <Throttle/>
+      {/* <Throttle/> */}
+      {/* <Carousel/> */}
+      {/* <Dnd/> */}
+      <Dropdown/>
     </div>
   );
 }
 
 export default App;
+

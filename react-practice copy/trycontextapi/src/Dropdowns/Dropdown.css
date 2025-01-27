@@ -1,0 +1,44 @@
+.accordion-icon {
+    border: solid currentcolor;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    height: 8px;
+    pointer-events: none;
+    transform: translateY(-2px) rotate(45deg);
+    width: 8px;
+  }
+  
+  
+  .rotated {
+    transform: translateY(-2px) rotate(-135deg);
+    border: solid currentcolor;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    height: 8px;
+    pointer-events: none;
+    width: 8px;
+  }
+  
+  .accordian-style {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 2rem;
+    padding:1rem;
+    height:100vh;
+  }
+  
+  .divinside{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    height:400px;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  

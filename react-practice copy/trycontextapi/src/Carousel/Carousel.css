@@ -1,0 +1,63 @@
+.Maincomponent{
+    width:100vw;
+    height:100vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagediv{
+    background-color: lightblue;
+    border: 2px solid black;
+    width:400px;
+    height:400px;
+    position:relative;
+    transition: ease-in 0.5s;
+    border-radius: 10px;;
+}
+
+.imagediv img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition:  1s ease-in-out forwards ;
+}
+
+.prevbtn{
+    background-color: beige;
+    color:black;
+    position: absolute;
+    left:0;
+    padding:1rem;
+    border-radius: 5px;
+    top:45%;
+    z-index: 1;
+    
+}
+
+.nextbtn{
+    background-color: beige;
+    color:black;
+    position: absolute;
+    right:0;
+    top:45%;
+    padding:1rem;
+    border-radius: 5px;
+    z-index: 1;
+   
+}
+
+@keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
