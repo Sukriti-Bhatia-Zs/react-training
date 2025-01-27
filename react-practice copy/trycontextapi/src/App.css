@@ -112,14 +112,14 @@ span {
 
 .left {
   position: absolute;
-  left: -50%;
+  left: -40%;
   bottom: -20%;
   transform: translate(-50%,0%);
 }
 
 .right {
   position: absolute;
-  right: -50%;
+  right: -40%;
   bottom: -20%;
   transform: translate(50%,0%);
 }
