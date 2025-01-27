@@ -36,7 +36,7 @@ function App() {
     return () => {
       window.removeEventListener('click', handleOutsideClick);
     };
-  },[]);
+  }, []);
 
   return (
     <main>
@@ -104,7 +104,7 @@ const Tooltip = ({ alignment, text, children }) => {
     return () => {
       window.removeEventListener("click", handleoutsidebtn);
     };
-  },[]);
+  }, []);
 
   return (
     <div
@@ -145,7 +145,7 @@ const Hover = ({ text, alignment }) => {
 const SideBar = () => {
   return (
     <div className="Sidebar">
-      <div onClick={(e)=>e.stopPropagation()} className='sidebar'>
+      <div onClick={(e) => e.stopPropagation()} className='sidebar'>
         <div>Hi, this is the sidebar</div>
       </div>
     </div>
