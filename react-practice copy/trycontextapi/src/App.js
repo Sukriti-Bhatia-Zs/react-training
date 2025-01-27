@@ -10,6 +10,7 @@ import Throttle from './Throttling/Throttle';
 import Carousel from './Carousel/Carousel';
 import Dnd from './DragNDropList/Dnd';
 import Dropdown from './Dropdowns/Dropdown';
+import Grid from './GridLights/Grid';
 
 
 function App() {
@@ -24,10 +25,12 @@ function App() {
       {/* <Throttle/> */}
       {/* <Carousel/> */}
       {/* <Dnd/> */}
-      <Dropdown/>
+      {/* <Dropdown/> */}
+      <Grid/>
     </div>
   );
 }
 
 export default App;
+
 
