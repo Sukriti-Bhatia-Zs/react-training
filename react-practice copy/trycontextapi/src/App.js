@@ -1,3 +1,5 @@
+import "./App.css";
+import TooltipMain from "./ToolTips/TooltipMain";
 import './index.css'
 import './App.css';
 import Themecontextprovider from './Components/Themecontextprovider';
@@ -19,6 +21,7 @@ function App() {
   
   return (
     <div>
+     <TooltipMain/>
       {/*<AccordionMain/>*/}
       {/* <Themecontextprovider/> */}
       {/* <Buttons4/> */}
@@ -26,7 +29,7 @@ function App() {
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
-      <Modal1/>
+      {/*<Modal1/>*}
       {/* <Count/> */}
       {/* <UseEffectques/> */}
       {/* <Childprops/> */}
@@ -36,3 +39,4 @@ function App() {
 }
 
 export default App;
+
