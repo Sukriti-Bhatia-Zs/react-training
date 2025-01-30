@@ -1,7 +1,7 @@
-import "./App.css";
-import TooltipMain from "./ToolTips/TooltipMain";
-import './index.css'
+import './index.css';
 import './App.css';
+import { useState, useEffect, useRef } from 'react';
+import TooltipMain from './ToolTips/TooltipMain';
 import Themecontextprovider from './Components/Themecontextprovider';
 import Buttons4 from './Buttons/Buttons4';
 import CustomHookUseIsMounted from './Customhooks/CustomHookUseIsMounted';
@@ -15,13 +15,12 @@ import ParentComponent from './Reacttest2/ParentComponent';
 import Count from './UseffectQues/Count';
 import UseEffectques from './UseffectQues/UseEffectques';
 import Childprops from './reacttest/Childprops';
-import Parentprops from './reacttest/Parentprops';
 
 function App() {
   
   return (
     <div>
-     <TooltipMain/>
+      <TooltipMain/>
       {/*<AccordionMain/>*/}
       {/* <Themecontextprovider/> */}
       {/* <Buttons4/> */}

@@ -1,45 +1,45 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+
+import { useState, useEffect, useRef } from 'react';
+import './Tooltip.css'
 
 const Tooltip = ({ alignment, text, children }) => {
   const [show, setShow] = useState(false);
-  const mainref = useRef(null);
+  const mainRef = useRef(null);
 
   const getAlignmentClass = (alignment) => {
     switch (alignment) {
-      case "top":
-        return "top";
-      case "bottom":
-        return "bottom";
-      case "left":
-        return "left";
-      case "right":
-        return "right";
+      case 'top':
+        return 'top';
+      case 'bottom':
+        return 'bottom';
+      case 'left':
+        return 'left';
+      case 'right':
+        return 'right';
       default:
-        return "top";
+        return 'top';
     }
   };
 
+  const isButton = children.type === 'button';
+  const isSpan = children.type === 'span';
+
   useEffect(() => {
-    const handleoutside = (event) => {
+    const handleoutsidebtn = (event) => {
       if (
-        mainref.current &&
-        !mainref.current.contains(event.target) &&
-        event.target.tagName != "BUTTON"
+        mainRef.current &&
+        !mainRef.current.contains(event.target)
       ) {
         setShow(false);
       }
     };
-
-    window.addEventListener("click", handleoutside);
+    window.addEventListener("click", handleoutsidebtn);
 
     return () => {
-      window.removeEventListener("click", handleoutside);
+      window.removeEventListener("click", handleoutsidebtn);
     };
-  });
-
-  const isButton = children.type == "button";
-  const isSpan = children.type == "span";
+  }, []);
 
   return (
     <div
@@ -47,7 +47,7 @@ const Tooltip = ({ alignment, text, children }) => {
       onMouseEnter={isSpan ? () => setShow(true) : undefined}
       onMouseLeave={isSpan ? () => setShow(false) : undefined}
       onClick={isButton ? () => setShow(true) : undefined}
-      ref={mainref}
+      ref={mainRef}
     >
       {show && (
         <div className={`showtool ${getAlignmentClass(alignment)}`}>

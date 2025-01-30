@@ -58,27 +58,80 @@
   }
   
   .top {
-    top: -2.5rem;
+    position: absolute;
+    top: -100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
   }
   
   .bottom {
-    bottom: -2.5rem;
+    position:absolute;
+    bottom: -50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,100%);
   }
   
   .left {
-    left: -60%;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;
+    left: -40%;
+    bottom: -20%;
+    transform: translate(-50%,0%);
   }
   
   .right {
-    right: -60%;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;
+    right: -40%;
+    bottom: -20%;
+    transform: translate(50%,0%);
+  }
+  
+  .sidebar {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    width: 300px;
+    height: 100%;
+    background-color: lightblue;
+    padding: 20px;
+    display: block;
+    z-index: 2;
+    color:black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  .slideOut{
+    animation: slideOut 0.5s ease-out forwards;
+  }
+  
+  .Sidebar{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      right: -250px; 
+    }
+    100% {
+      right: 0; 
+    }
+  }
+  
+  
+  @keyframes slideOut {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -350px;
+    }
   }
 
 
@@ -124,6 +177,3 @@
   button:focus-visible {
     background-color: lightgreen;
   }
-  
-  
-  

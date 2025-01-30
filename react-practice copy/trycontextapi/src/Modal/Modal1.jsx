@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Content from "./Content";
+
 import './Modal.css'
 
 const Modal1=()=>{
