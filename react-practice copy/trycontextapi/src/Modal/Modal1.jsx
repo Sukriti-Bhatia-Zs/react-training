@@ -9,9 +9,9 @@ const Modal1=()=>{
         <div>
            
              <div className="modalmain">
-                <div><Content show={show} setShow={setShow}/></div>
+                {show &&<div><Content show={show} setShow={setShow}/></div>}
                 <div>
-                    <button onClick={()=>setShow(prev=>!prev)} className="btn">Open Modal</button>
+                    <button onClick={()=>setShow(true)} className="btn">Open Modal</button>
                 
                 </div>
             </div>
