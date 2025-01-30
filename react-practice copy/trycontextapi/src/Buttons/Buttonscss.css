@@ -12,15 +12,16 @@
   
 
 .diving {
-    width: 80vw;
-    height: 80vh;
+    width: 50vw;
+    height: 60vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, 1fr);    
     gap: 5rem;                           
-    background-color: lightgray;          
+    background-color: lightgrey;          
     padding: 10px;
     border-radius: 15px;
+    position: relative;
   }
   
  
@@ -67,6 +68,140 @@
 
 }
 
+.Main{
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    background-color: white;  
+    /* border: 1px solid #ccc;   */
+    border-radius: 10px;  
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.Diving{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);    
+  gap: 5rem;                           
+  background-color: white;          
+  padding: 10px;
+ 
+}
+
+.newdiv{
+  height:50vw;
+  width:50vw;
+  background-color: beige;
+}
+
+.ParentContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 200px;
+  width: 300px;
+
+}
+
+.inputfield {
+  width: 100%; 
+  padding: 8px; 
+  font-size: 16px; 
+  box-sizing: border-box; 
+}
+
+.roll-btn {
+  padding: 12px 24px; 
+  font-size: 18px; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+.Childmain {
+  display: flex; 
+  flex-direction: row;
+  height:30rem;
+  width:80%;
+  background-color: lightblue;
+  border:2px solid black;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+  padding:1rem;
+  
+}
+
+.childdetails{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:2px solid black;
+  padding:2rem;
+}
+
+.desc{
+  border:2px solid black;
+  padding:1rem;
+  min-height: 7rem;
+}
+
+@media (max-width: 750px) {
+  .Childmain {
+    flex-direction: column;
+    align-items: center;
+    height:max-content
+  }
+
+  .childimg img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .childdetails {
+    text-align: center; 
+  }
+
+}
 
 
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 8rem;
+  left: 0rem;
+}
 
+.loader img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; 
+ 
+}
+
+.test3div{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction:column;
+  gap:1rem;
+  width:50vw;
+  background-color:lightgrey;
+  min-height:20vw;
+  padding:1rem;
+}
