@@ -9,6 +9,10 @@ import FormValidation from './Form/FormValidation';
 import ParentComponent from './Reacttest2/ParentComponent';
 import Count from './UseffectQues/Count';
 import UseEffectques from './UseffectQues/UseEffectques';
+import Childprops from './reacttest/Childprops';
+import Parentprops from './reacttest/Parentprops';
+
+
 
 
 function App() {
@@ -20,9 +24,10 @@ function App() {
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
-      <ParentComponent/>
       {/* <Count/> */}
       {/* <UseEffectques/> */}
+      {/* <Childprops/> */}
+      {/*<Parentprops/>*/}
     </div>
   );
 }
