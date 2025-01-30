@@ -8,6 +8,11 @@ import CustomHookUseCompSize from './Customhooks/CustomHookUseCompSize'
 import FormValidation from './Form/FormValidation';
 import Accordion from './ReactTestDay12/Accordian';
 import AccordionMain from './ReactTestDay12/AccordianMain';
+import ParentComponent from './Reacttest2/ParentComponent';
+import Count from './UseffectQues/Count';
+import UseEffectques from './UseffectQues/UseEffectques';
+import Childprops from './reacttest/Childprops';
+import Parentprops from './reacttest/Parentprops';
 
 
 function App() {
@@ -21,6 +26,10 @@ function App() {
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
+      {/* <Count/> */}
+      {/* <UseEffectques/> */}
+      {/* <Childprops/> */}
+      {/*<Parentprops/>*/}
     </div>
   );
 }
