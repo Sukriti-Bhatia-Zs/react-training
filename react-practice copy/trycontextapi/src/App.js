@@ -8,6 +8,7 @@ import CustomHookUseIsMounted from './Customhooks/CustomHookUseIsMounted';
 import CustomHookUseWindowSize from './Customhooks/CustomHookUseWindowSize';
 import CustomHookUseCompSize from './Customhooks/CustomHookUseCompSize'
 import FormValidation from './Form/FormValidation';
+import DebouncingInput from './Debouncing/DebouncingInput';
 import Modal1 from './Modal/Modal1';
 import Accordion from './ReactTestDay12/Accordian';
 import AccordionMain from './ReactTestDay12/AccordianMain';
@@ -16,11 +17,12 @@ import Count from './UseffectQues/Count';
 import UseEffectques from './UseffectQues/UseEffectques';
 import Childprops from './reacttest/Childprops';
 
+
 function App() {
   
   return (
     <div>
-      <TooltipMain/>
+      {/*<TooltipMain/>*}
       {/*<AccordionMain/>*/}
       {/* <Themecontextprovider/> */}
       {/* <Buttons4/> */}
@@ -28,6 +30,7 @@ function App() {
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
+      <DebouncingInput/>
       {/*<Modal1/>*}
       {/* <Count/> */}
       {/* <UseEffectques/> */}
