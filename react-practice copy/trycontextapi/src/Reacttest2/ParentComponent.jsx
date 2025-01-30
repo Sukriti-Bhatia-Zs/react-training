@@ -25,8 +25,8 @@ const ParentComponent = () => {
   };
 
   const handleClick = () => {
-    if (rechangebuttn<=0 || rechangebuttn > 6) {
-      setError("Please enter a value between 1 and 6.");
+    if (rechangebuttn<=1 || rechangebuttn > 6) {
+      setError("Please enter a value between 2 and 6.");
     } else {
       setError(""); 
       setShowBtn(false); 
