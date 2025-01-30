@@ -66,9 +66,7 @@
   width:80%;
   padding:1rem;
 
-
 }
-
 
 .Main{
     display: flex;  
@@ -178,7 +176,6 @@
 }
 
 
-
 .loader {
   position: absolute;
   display: flex;
@@ -208,4 +205,3 @@
   min-height:20vw;
   padding:1rem;
 }
-

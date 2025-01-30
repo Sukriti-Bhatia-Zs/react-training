@@ -8,6 +8,7 @@ import CustomHookUseIsMounted from './Customhooks/CustomHookUseIsMounted';
 import CustomHookUseWindowSize from './Customhooks/CustomHookUseWindowSize';
 import CustomHookUseCompSize from './Customhooks/CustomHookUseCompSize'
 import FormValidation from './Form/FormValidation';
+import Throttle from './Throttling/Throttle';
 import DebouncingInput from './Debouncing/DebouncingInput';
 import Modal1 from './Modal/Modal1';
 import Accordion from './ReactTestDay12/Accordian';
@@ -30,7 +31,8 @@ function App() {
       {/* <CustomHookUseWindowSize/> */}
       {/* <CustomHookUseCompSize/> */}
       {/* <FormValidation/> */}
-      <DebouncingInput/>
+      <Throttle/>
+      {/*<DebouncingInput/>*/}
       {/*<Modal1/>*}
       {/* <Count/> */}
       {/* <UseEffectques/> */}
