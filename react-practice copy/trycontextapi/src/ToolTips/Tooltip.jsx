@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useState, useEffect, useRef } from 'react';
 import './Tooltip.css'
 
@@ -33,7 +34,6 @@ const Tooltip = ({ alignment, text, children }) => {
         setShow(false);
       }
     };
-
     window.addEventListener("click", handleoutsidebtn);
 
     return () => {
