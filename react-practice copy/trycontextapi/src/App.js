@@ -27,7 +27,9 @@ function App() {
         !refa.current.contains(event.target) &&
         event.target.tagName !== 'BUTTON'
       ) {
-        setCenter(false);
+        setTimeout(()=>{
+          setCenter(false);
+        },1000)
       }
     };
 
@@ -143,6 +145,7 @@ const Hover = ({ text, alignment }) => {
 };
 
 const SideBar = () => {
+  
   return (
     <div className="Sidebar">
       <div onClick={(e) => e.stopPropagation()} className='sidebar'>
