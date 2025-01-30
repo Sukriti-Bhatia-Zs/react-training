@@ -1,12 +1,26 @@
-
+import './index.css'
 import './App.css';
 import Themecontextprovider from './Components/Themecontextprovider';
+import Buttons4 from './Buttons/Buttons4';
+import CustomHookUseIsMounted from './Customhooks/CustomHookUseIsMounted';
+import CustomHookUseWindowSize from './Customhooks/CustomHookUseWindowSize';
+import CustomHookUseCompSize from './Customhooks/CustomHookUseCompSize'
+import FormValidation from './Form/FormValidation';
+import Childprops from './reacttest/Childprops';
+import Parentprops from './reacttest/Parentprops';
 
 
 function App() {
   return (
     <div>
-      <Themecontextprovider/>
+      {/* <Themecontextprovider/> */}
+      {/* <Buttons4/> */}
+      {/* <CustomHookUseIsMounted/> */}
+      {/* <CustomHookUseWindowSize/> */}
+      {/* <CustomHookUseCompSize/> */}
+      {/* <FormValidation/> */}
+      {/* <Childprops/> */}
+      <Parentprops/>
     </div>
   );
 }
