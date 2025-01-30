@@ -6,14 +6,12 @@ function App() {
   const [center, setCenter] = useState(false);
   const refa = useRef(null);
 
-
   const handleclickbtn = (index) => {
     if (index === 4) {
       console.log("4th index clicked");
       setCenter((prev) => !prev);
     }
   };
-
 
   useEffect(() => {
     console.log(center);
@@ -27,9 +25,9 @@ function App() {
         !refa.current.contains(event.target) &&
         event.target.tagName !== 'BUTTON'
       ) {
-        setTimeout(()=>{
+       
           setCenter(false);
-        },1000)
+      
       }
     };
 
@@ -62,7 +60,7 @@ function App() {
           )}
         </div>
       ))}
-      {center && <SideBar />}
+      {center && <SideBar setCenter={setCenter}/>}
     </main>
   );
 }
@@ -144,11 +142,21 @@ const Hover = ({ text, alignment }) => {
   );
 };
 
-const SideBar = () => {
-  
+const SideBar = ({setCenter}) => {
+
+  const [removeanimation ,setRemoveanimation]=useState(false)
+
+  const handleclick=()=>{
+    setRemoveanimation(true)
+    setTimeout(()=>{
+      setCenter(false)
+    },500)
+  }
+ 
   return (
     <div className="Sidebar">
-      <div onClick={(e) => e.stopPropagation()} className='sidebar'>
+      <div onClick={(e) => e.stopPropagation()} className={`sidebar ${removeanimation ? 'slideOut':''}`}>
+        <div className='cross' style={{color:"red",height:"5px",width:"5px",fontSize:"2rem",right:"1.5rem"}} onClick={handleclick}>x</div>
         <div>Hi, this is the sidebar</div>
       </div>
     </div>
