@@ -12,13 +12,13 @@
   
 
 .diving {
-    width: 80vw;
-    height: 80vh;
+    width: 50vw;
+    height: 60vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, 1fr);    
     gap: 5rem;                           
-    background-color: lightgray;          
+    background-color: lightgrey;          
     padding: 10px;
     border-radius: 15px;
   }
@@ -58,6 +58,67 @@
   padding: 10px;
   width: 100vw;
   height: 100vh;
+}
+
+
+.Main{
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    background-color: white;  
+    /* border: 1px solid #ccc;   */
+    border-radius: 10px;  
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.Diving{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);    
+  gap: 5rem;                           
+  background-color: white;          
+  padding: 10px;
+ 
+}
+
+.newdiv{
+  height:50vw;
+  width:50vw;
+  background-color: beige;
+}
+
+.ParentContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 200px;
+  width: 300px;
+
+}
+
+.input-field {
+  width: 100%; 
+  padding: 8px; 
+  font-size: 16px; 
+  box-sizing: border-box; 
+}
+
+.roll-btn {
+  padding: 12px 24px; 
+  font-size: 18px; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
 }
 
 .Childmain {
@@ -104,6 +165,7 @@
   .childdetails {
     text-align: center; 
   }
+
 }
 
 
