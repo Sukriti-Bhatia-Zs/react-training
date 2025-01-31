@@ -22,7 +22,6 @@ const DebouncingInput = () => {
   // handle debouce input , preventing mutiple api calls as handleinputchange will only be executed after 3000 sec
   const handledebounceInput=debounce(handleinputchange,3000);
 
-
   return (
     <div className="main">
       <div className="center">
