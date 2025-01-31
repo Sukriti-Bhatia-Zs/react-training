@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 
 const DebouncingInput = () => {
   
@@ -25,7 +25,7 @@ const DebouncingInput = () => {
   return (
     <div className="main">
       <div className="center">
-        <label htmlFor="search">Search :</label>
+        <label htmlFor="search" style={{color:"black"}}>Search :</label>
         <input
           type="text"
           name="search"

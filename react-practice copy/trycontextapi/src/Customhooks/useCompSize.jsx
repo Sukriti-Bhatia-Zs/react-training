@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import { useEffect,useState } from "react";
 
 const useCompSize=(ref)=>{
 
@@ -11,19 +11,25 @@ const useCompSize=(ref)=>{
 
         const changesize=()=>{
             if(ref.current){
-                setCompSize(prev=>({...prev,width:ref.current.offsetwidth,height:ref.current.offsetheight}))
+                setCompSize({width:ref.current.offsetWidth,height:ref.current.offsetHeight})
             }
         }
 
-        const resizeObserver = new ResizeObserver(changesize);
+       
+        const resizeobserver = new ResizeObserver(changesize);
 
         if(ref.current){
-            resizeObserver.observer(ref.current)
+            resizeobserver.observe(ref.current)
         }
 
-    },[ref.current])
 
-    return {compsize}
+        return () => {
+            resizeobserver.disconnect();
+        };
+
+    },[ref])
+
+    return compsize
     
 }
 

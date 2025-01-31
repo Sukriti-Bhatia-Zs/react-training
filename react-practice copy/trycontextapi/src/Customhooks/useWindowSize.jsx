@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import  { useState,useEffect } from "react";
 
 const useWindowSize=()=>{
 
@@ -7,17 +7,24 @@ const useWindowSize=()=>{
         height:window.innerHeight
     })
 
-    const onrezise=()=>{
-        window.addEventListener("resize",()=>{
-            setWindowSize(prev=>({...prev,width:window.innerWidth,height:window.innerHeight}))
-        })
-    }
+   
 
     useEffect(()=>{
-        onrezise();
-    })
+        const onrezise=()=>{
+            window.addEventListener("resize",()=>{
+                setWindowSize(prev=>({...prev,width:window.innerWidth,height:window.innerHeight}))
+            })
+        }
 
-    return {windowsize}
+        window.addEventListener('resize',onrezise)
+
+        return ()=>{
+            window.removeEventListener('resize',onrezise)
+        }
+       
+    },[])
+
+    return windowsize
 
 
 

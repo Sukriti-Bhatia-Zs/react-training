@@ -16,7 +16,7 @@ const CustomHookUseIsMounted=()=>{
     })
 
     return (
-        <div className="mainbody">
+        <div className="mainbody" style={{color:"black"}}>
 
             {
                 message && (

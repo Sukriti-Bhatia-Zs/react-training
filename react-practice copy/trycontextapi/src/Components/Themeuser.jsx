@@ -4,7 +4,7 @@ import { useContext, useRef, useReducer } from "react";
 
     const reducer = (state, action) => {
         if (action.type === "INCREMENT") {
-            return { coumt: state.count + 1 };
+            return { count: state.count + 1 };
         }
         if (action.type === "DECREMENT") {
             return { count: state.count - 1 };
@@ -66,7 +66,7 @@ const Themeuser = () => {
                 </div>
                 <div className="inc-dec" style={{
                     width: "100%", display: "flex", justifyContent: "center",
-                    alignItems: "center", flexDirection: "row", gap: "2rem"
+                    alignItems: "center", flexDirection: "row", gap: "3rem"
                 }}
                 >
                     <button onClick={() => dispatch({ type: "INCREMENT" })} onDoubleClick={(e) => e.stopPropagation()} style={{ fontSize: "1rem", padding: "1rem", backgroundColor: "lightblue", borderRadius: "10%" }}>Increment</button>
