@@ -5,13 +5,14 @@
   }
   
   .accordion-icon {
-    border: solid currentcolor;
+    border: solid black;
     border-width: 0 2px 2px 0;
     display: inline-block;
     height: 8px;
     pointer-events: none;
     transform: translateY(-2px) rotate(45deg);
     width: 8px;
+    color:black;
   }
   
   .accordion-icon-rotated {
@@ -20,16 +21,17 @@
   
   .rotated {
     transform: translateY(-2px) rotate(-135deg);
-    border: solid currentcolor;
+    border: solid black;
     border-width: 0 2px 2px 0;
     display: inline-block;
     height: 8px;
     pointer-events: none;
     width: 8px;
+    color:black;
   }
   
   .accordian-style {
-    background-color: beige;
+    background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +49,7 @@
     gap: 0.3rem;
     flex-direction: column;
     border: 2px solid black;
+    color:black;
   }
   
   .Content {

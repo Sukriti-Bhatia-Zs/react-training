@@ -10,7 +10,7 @@ const Childprops=(props)=>{
             <div className="childimg">
                 <img src={props.img} alt="" height={"300px"} width={"300px"}/>
             </div>
-            <div className="childdetails">
+            <div className="childdetails" style={{color:'black'}}>
                 <div>
                     <h1>{props.title}</h1>
                 </div>

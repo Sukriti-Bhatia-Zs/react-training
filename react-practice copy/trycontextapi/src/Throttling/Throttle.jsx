@@ -35,7 +35,7 @@ const Throttle=()=>{
   
 
     return (
-        <div style={{display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"blue"}}>
+        <div style={{display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"blue",width:"100vw"}}>
             <div>
                 <button style={{backgroundColor:"beige",color:"black",padding:"1rem"}} onClick={throttle(()=>{
                    console.log(Date.now())

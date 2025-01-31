@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "./Accordian";
+import './Accordian.css'
 
 const AccordionMain=()=>{
 
