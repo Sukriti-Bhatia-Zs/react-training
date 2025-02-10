@@ -27,6 +27,8 @@ function App() {
     'Debouncing','Dice','Form Validation','Modal','Sum of Dice Assignment','Parent child props Assignment',
   'Accordian','Throttling','Tooltip Assignment','IsMounted CustomHook','ComponentSize CustomHook','WindowSize CustomHook']
 
+  console.log("hello")
+
   const componentsList = [
     <Buttons4 />,
     <Themecontextprovider />,
